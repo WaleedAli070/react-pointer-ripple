@@ -10,6 +10,7 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -cw",
+    "prepublish": "rm -rf ./dist && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "waleedali070@gmail.com",
@@ -29,5 +30,10 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "pointer-events",
+    "typescript"
+  ]
 }
