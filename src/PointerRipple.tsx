@@ -5,10 +5,10 @@ const defaultClasses = ['hidden']
 
 const RipplePointer: React.FC = ({ children }): JSX.Element => {
   const pointerContainerRef = React.useRef<HTMLDivElement>(null)
-  const [rippleClasses, setRippleClasses] = React.useState(defaultClasses)
-  const [pointerRippleStyle, setPointerRippleStyle] = React.useState({top: 0, left: 0})
-  const [isDragging, setIsDragging] = React.useState(false)
-  const [isAnimating, setIsAnimating] = React.useState(false)
+  const [isDragging, setIsDragging] = React.useState<boolean>(false)
+  const [isAnimating, setIsAnimating] = React.useState<boolean>(false)
+  const [rippleClasses, setRippleClasses] = React.useState<string[]>(defaultClasses)
+  const [pointerRippleStyle, setPointerRippleStyle] = React.useState<React.CSSProperties>({top: 0, left: 0})
 
   const handleEvent = (e: any) => {
     setPointerRippleStyle({
