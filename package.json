@@ -1,0 +1,11 @@
+{
+  "name": "react-pointer-ripple",
+  "version": "0.1.0",
+  "description": "adds ripple animation to pointer events in react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "waleedali070@gmail.com",
+  "license": "MIT"
+}
