@@ -2,7 +2,7 @@
   "name": "react-pointer-ripple",
   "version": "0.1.0",
   "description": "adds ripple animation to pointer events in react components",
-  "main": "src/index.js",
+  "main": "index.js",
   "module": "dist/index.es.js",
   "files": [
     "dist"
@@ -15,12 +15,19 @@
   "author": "waleedali070@gmail.com",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "rollup": "^2.33.3"
+    "rollup": "^2.33.3",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^4.0.5"
   },
   "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }
